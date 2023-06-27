@@ -1,6 +1,6 @@
-const restOfTheBody = document.selectElementById("open-rest");
+const restOfTheBody = document.getElementById("open-rest");
 
 const openBody = () => {
-    
+    console.log("hi");
 }
-restOfTheBody.addEventListener("click")
+restOfTheBody.addEventListener("click", openBody)
