@@ -1,6 +1,7 @@
 /* General styling */
 body{
     margin:0;
+    padding:0;
     color: antiquewhite;
 }
 
@@ -12,11 +13,21 @@ body{
     object-fit:none;
     background-position:  left center;
     width: auto;
-    margin: 0 auto;
+    margin: 0 0;
     padding: 20%;
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-left: auto;
     margin-right: auto;
+    overflow:hidden;
+}
+
+#open-rest{
+    float: calc(img-size + 100);
+}
+
+/* End of editing the welcome page */
+.others{
+    display:none;
 }
