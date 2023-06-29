@@ -1,6 +1,16 @@
-const restOfTheBody = document.getElementById("open-rest");
+// const restOfTheBodyButton = document.getElementById("open-rest");
 
-const openBody = () => {
-    console.log("hi");
+// const openBody = () => {
+//     const restOfThePage = document.querySelector(".others");
+//     restOfTheBodyButton.classList.add("open-rest-clicked");
+//     restOfThePage.classList.add("others-clicked");
+// }
+// restOfTheBodyButtton.addEventListener("click", openBody)
+
+const restOfTheBodyButton = document.getElementById("open-rest");
+
+function openbody (){
+    const restOfThePage = document.querySelector(".others");
+    restOfThePage.classList.add("others-clicked");
 }
-restOfTheBody.addEventListener("click", openBody)
+restOfTheBodyButton.addEventListener("click", openbody);

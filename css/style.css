@@ -5,29 +5,49 @@ body{
     color: antiquewhite;
 }
 
+/* Navigation Tabs */
+.navigation-tabs{
+    background-color: red;
+    display:flex;
+}
+/* End the navigation */
+
 /* Welcome div design */
 .welcome{
     background-image:url("../assets/images/self_portrait.JPG");
     background-size: 100%;
     background-repeat: no-repeat;
     object-fit:none;
-    background-position:  left center;
-    width: auto;
-    margin: 0 0;
+    background-position:  center center;
     padding: 20%;
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-left: auto;
     margin-right: auto;
-    overflow:hidden;
+    margin:0 0;
 }
 
 #open-rest{
-    float: calc(img-size + 100);
+    display: flex;
+    cursor:pointer;
+    margin-left:auto;
+    margin-right:auto;
+    align-items: center;
+    color:aliceblue;
+    background-color:black;
 }
-
 /* End of editing the welcome page */
+
+
+/* Edit the rest of the site */
 .others{
     display:none;
 }
+
+.others-clicked{
+    margin: 0;
+    display:block;
+    background-color: red;
+}
+/* End of editing the rest of the site */
