@@ -39,6 +39,10 @@ body{
 }
 /* End of editing the welcome page */
 
+/* Edit the open-rest button when it is clicked */
+.open-rest-clicked{
+    display:none;
+}
 
 /* Edit the rest of the site */
 .others{
