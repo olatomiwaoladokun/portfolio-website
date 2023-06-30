@@ -2,42 +2,63 @@
 body{
     margin:0;
     padding:0;
-    color: antiquewhite;
-}
 
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+/* End of general styling */
 /* Navigation Tabs */
 .navigation-tabs{
-    background-color: red;
     display:flex;
+    align-items: center;
+    background-color:rgb(115, 160, 180);
+
+
 }
+.navigation-tabs ul{
+    float:right;
+    margin-right: 50%;
+}
+.navigation-tabs li{
+    display: inline-block;
+}
+.navigation-tabs li:hover, .navigation-tabs li:active {
+    background-color:black;
+    transition:.6s;
+}
+
 /* End the navigation */
 
 /* Welcome div design */
 .welcome{
-    background-image:url("../assets/images/self_portrait.JPG");
-    background-size: 100%;
-    background-repeat: no-repeat;
-    object-fit:none;
-    background-position:  center center;
-    padding: 20%;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    margin-left: auto;
-    margin-right: auto;
-    margin:0 0;
-}
-
-#open-rest{
-    display: flex;
     cursor:pointer;
     margin-left:auto;
     margin-right:auto;
     align-items: center;
-    color:aliceblue;
-    background-color:black;
+    color:black;
+    color:rgb(115, 160, 180);
+    margin-top:15%;
+
 }
-/* End of editing the welcome page */
+.welcome-disappear{
+    display: none;
+}
+/* End of welcome div design */
+#open-rest{
+    color:aliceblue;
+    background-color:rgb(115, 160, 180);
+    margin-bottom: 20px;
+    width: 150px;
+    height:50px;
+    border-radius: 120px;
+    border-width: 0px;
+    cursor:pointer;
+}
+
 
 /* Edit the open-rest button when it is clicked */
 .open-rest-clicked{
@@ -49,9 +70,19 @@ body{
     display:none;
 }
 
+
 .others-clicked{
-    margin: 0;
-    display:block;
-    background-color: red;
+    background-image:url("../assets/images/self_portrait.JPG");
+    background-size: 100%;
+    display: flex;
+    background-repeat: no-repeat;
+    object-fit:none;
+    background-position:  center center;
+    padding: 20%;
+    flex-direction: column;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin:0 0;
+    color: antiquewhite;
 }
-/* End of editing the rest of the site */
