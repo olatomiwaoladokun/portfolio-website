@@ -14,8 +14,6 @@ a{
     display:flex;
     align-items: center;
     background-color:rgb(115, 160, 180);
-
-
 }
 .navigation-tabs ul{
     float:right;
@@ -25,8 +23,7 @@ a{
     display: inline-block;
 }
 .navigation-tabs li:hover, .navigation-tabs li:active {
-    background-color:black;
-    transition:.6s;
+    background-color:rgb(115, 160, 200)
 }
 
 /* End the navigation */
@@ -46,6 +43,7 @@ a{
 }
 .welcome-disappear{
     display: none;
+    transition: .7s linear;
 }
 /* End of welcome div design */
 #open-rest{

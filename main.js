@@ -14,7 +14,7 @@ function openbody (){
     const restOfThePage = document.querySelector(".others");
     restOfThePage.classList.add("others-clicked");
     // Make the button and the welcome page disappear
-    welcomePortion.classList.add("welcome-diappear");
+    welcomePortion.classList.add("welcome-disappear");
     restOfTheBodyButton.classList.add("open-rest-clicked");
     restOfThePage.focus();
 }
