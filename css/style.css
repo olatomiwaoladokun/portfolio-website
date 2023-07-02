@@ -22,8 +22,8 @@ a{
 .navigation-tabs li{
     display: inline-block;
 }
-.navigation-tabs li:hover, .navigation-tabs li:active {
-    background-color:rgb(115, 160, 200)
+.navigation-tabs li:hover, .navigation-tabs li:active{
+    background-color:rgb(115, 160, 200);
 }
 
 /* End the navigation */
@@ -32,7 +32,6 @@ a{
 .welcome{
     display: flex;
     flex-direction: column;
-    cursor:pointer;
     margin-left:auto;
     margin-right:auto;
     align-items: center;
@@ -83,4 +82,5 @@ a{
     margin-right: auto;
     margin:0 0;
     color: antiquewhite;
+
 }
