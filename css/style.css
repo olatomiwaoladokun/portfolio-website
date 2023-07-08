@@ -2,8 +2,6 @@
 body{
     margin:0;
     padding:0;
-
-    list-style: none;
 }
 a{
     text-decoration: none;
@@ -12,18 +10,33 @@ a{
 /* Navigation Tabs */
 .navigation-tabs{
     display:flex;
+    margin: 10px 0px;
     align-items: center;
-    background-color:rgb(115, 160, 180);
+    background-color:rgba(115, 160, 180, 0.2);
+    align-items: center;
+    border-radius: 200px;
+
 }
 .navigation-tabs ul{
     float:right;
-    margin-right: 50%;
+    align-items: center;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+
 }
 .navigation-tabs li{
     display: inline-block;
+    margin-right: 50px;
+    align-items:center;
+    border-radius:2px;
+    padding: 10px ;
+    transition: all .5s;
 }
 .navigation-tabs li:hover, .navigation-tabs li:active{
-    background-color:rgb(115, 160, 200);
+    background-color:white;
+    cursor: pointer;
+
 }
 
 /* End the navigation */
@@ -42,7 +55,7 @@ a{
 }
 .welcome-disappear{
     display: none;
-    transition: .7s linear;
+    transition: .7s linear 2;
 }
 /* End of welcome div design */
 #open-rest{
@@ -54,8 +67,13 @@ a{
     border-radius: 120px;
     border-width: 0px;
     cursor:pointer;
+    transition: all .5s;
 }
-
+#open-rest:hover{
+    transform: translateY(-10px);
+    color:rgb(115, 160, 180);   
+    background-color: white;
+}
 
 /* Edit the open-rest button when it is clicked */
 .open-rest-clicked{
@@ -82,5 +100,12 @@ a{
     margin-right: auto;
     margin:0 0;
     color: antiquewhite;
+}
 
+/* Edit the remaining part of the site */
+.others h1{
+    transform: all .25s ease-in;
+}
+
+.others h1:hover{
 }
