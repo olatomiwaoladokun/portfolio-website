@@ -19,3 +19,10 @@ function openbody (){
     restOfThePage.focus();
 }
 restOfTheBodyButton.addEventListener("click", openbody);
+
+// Make the nav bar sticky
+
+windows.addEventListener("scroll", function(){
+    const navBar = document.querySelector(".navigation-tabs");
+    navBar.classList.toogle("sticky", window.scroolY > 0);
+});

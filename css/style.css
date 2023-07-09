@@ -2,6 +2,7 @@
 body{
     margin:0;
     padding:0;
+    font-family: 'Poppins', sans-serif;
 }
 a{
     text-decoration: none;
@@ -10,12 +11,10 @@ a{
 /* Navigation Tabs */
 .navigation-tabs{
     display:flex;
-    margin: 10px 0px;
-    align-items: center;
     background-color:rgba(115, 160, 180, 0.2);
-    align-items: center;
     border-radius: 200px;
-
+    position: fixed;
+    width: 100%;
 }
 .navigation-tabs ul{
     float:right;
@@ -23,6 +22,8 @@ a{
     width: fit-content;
     margin-left: auto;
     margin-right: auto;
+    position: relative;
+    justify-content: center;
 
 }
 .navigation-tabs li{
@@ -51,6 +52,7 @@ a{
     color:black;
     color:rgb(115, 160, 180);
     margin-top:15%;
+    z-index: 100000;
 
 }
 .welcome-disappear{
@@ -145,7 +147,7 @@ a{
     animation: slideFromRight 2s ease-in ;
     -webkit-animation: slideFromRight 2s ease-in ;
 }
-.navigation-tabs{
+/* .navigation-tabs{
     animation: slideNavbar 2s ease;
     -webkit-animation: slideNavbar 2s ease;
-}
+} */
