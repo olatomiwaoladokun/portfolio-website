@@ -13,16 +13,17 @@ a{
     display:flex;
     background-color:rgba(115, 160, 180, 0.2);
     border-radius: 200px;
+    margin: 0 0;
     position: fixed;
     width: 100%;
+
 }
 .navigation-tabs ul{
-    float:right;
+    float:center;
     align-items: center;
     width: fit-content;
     margin-left: auto;
     margin-right: auto;
-    position: relative;
     justify-content: center;
 
 }
@@ -51,8 +52,7 @@ a{
     align-items: center;
     color:black;
     color:rgb(115, 160, 180);
-    margin-top:15%;
-    z-index: 100000;
+    padding:15%;
 
 }
 .welcome-disappear{
@@ -137,6 +137,18 @@ a{
     }
 }
 
+@keyframes slideFromButtom{
+    from{
+        transform: translateY(100px);
+}   
+    to {
+        transform: translateY(0);
+
+    }
+}
+
+
+
 /* Keyframe ends */
 
 .welcome h1{
@@ -145,9 +157,13 @@ a{
 
 .welcome button{
     animation: slideFromRight 2s ease-in ;
-    -webkit-animation: slideFromRight 2s ease-in ;
 }
-/* .navigation-tabs{
-    animation: slideNavbar 2s ease;
-    -webkit-animation: slideNavbar 2s ease;
-} */
+.navigation-tabs{
+    animation: slideNavbar 3s ease;
+    -webkit-animation: slideNavbar 3s ease;
+}
+
+.others-clicked{
+    animation:slideFromButtom 2s ease;
+    -webkit-animation:slideFromButtom 2s ease;
+}
