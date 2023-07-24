@@ -13,15 +13,16 @@ a{
     display:flex;
     background-color:rgba(115, 160, 180, 0.2);
     border-radius: 200px;
-    margin: 0 0;
+    margin: 0 auto;
     position: fixed;
     width: 100%;
+    min-width: 544px;
+    flex-wrap: nowrap;
 
 }
 .navigation-tabs ul{
     float:center;
     align-items: center;
-    width: fit-content;
     margin-left: auto;
     margin-right: auto;
     justify-content: center;
@@ -51,7 +52,7 @@ a{
     margin-right:auto;
     align-items: center;
     color:rgb(115, 160, 180);
-    padding:15%;
+    padding:20%;
 
 }
 /* End of welcome div design */
@@ -90,12 +91,13 @@ a{
     background-repeat: no-repeat;
     object-fit:none;
     background-position:  center center;
-    padding: 20%;
+    padding: 15%;
     flex-direction: column;
     align-items: center;
     margin-left: auto;
     margin-right: auto;
     margin:0 0;
+    min-width: 60%;
     color: antiquewhite;
 }
 
