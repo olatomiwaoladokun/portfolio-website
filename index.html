@@ -10,26 +10,45 @@
   <body>
     <nav class="navigation-tabs">
       <ul class="content-wrapper">
-        <li><a href="./index.html" id="home">Home</a></li>
+        <li><a href="#welcome-part" id="home">Home</a></li>
         <li><a href="#about">About</a></li>
-        <li><a href="" id="contact">Contact</a></li>
-        <li><a href="" id="projects">Projects</a></li>
+        <li><a href="#projects" id="projects-nav">Projects</a></li>
+        <li><a href="#contacts" id="contact-nav">Contact</a></li>
     </ul>
     </nav>
-    <div class="welcome">
-      <h1 >Oladokun Olatomiwa</h1>
-      <button id="open-rest">Take a closer look</button>
-    </div>
+    <span id="welcome-part">
+      <section class="welcome">
+        <h1 >Oladokun Olatomiwa</h1>
+        <button id="open-rest">Take a closer look</button>
+      </section>
+    </span>
     <div class="others">
       <!-- <img src="assets/images/self_portrait.JPG" alt=""> -->
       <h1>HI, MY NAME IS</h1>
       <h2>Olatomiwa Oladokun</h2>
       <h3>A web developer in the making</h3>
     </div>
-    <div id="about">
+    <section id="about">
       <h1>Hello everyone</h1>
       <h1>my name is Oladokun Olatomiwa .A.</h1>
-    </div>
+      <img src="./assets/images/Cool_Dark_Potrait.JPG" alt="">
+    </section>
+    <section id="projects">
+      <span>A Unit Converter</span>
+      <span>A Youtube Video Downloder</span>
+      <span>A Dictionary</span>
+      <span>A QR Code </span>
+    </section>
+    <section id="contacts">
+      <img src="./assets/images/logo_designed.png" id="logo-contacts">
+      <input type="email" placeholder="Email" name="email" id="mail">
+      <input type="text" placeholder="Message" name="message" id="message">
+      <button id="send-button">Send</button>
+      <footer>
+        <a href="https://github.com/olatomiwaoladokun/" target="_blank"><img src="./assets/images/github.png" id="github"></a>
+        This site was created and designed by Me (Oladokun Olatomiwa .A.)
+      </footer>
+    </section>
 
     <script src="main.js"></script>
   </body>

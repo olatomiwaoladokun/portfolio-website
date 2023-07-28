@@ -1,13 +1,23 @@
 /* General styling */
 body{
-    margin:0;
-    padding:0;
+    margin:0 0;
+    padding:0 0;
     font-family: 'Poppins', sans-serif;
+    background-image: url("../assets/images/background-default.png");
+    background-repeat:no-repeat;
+    background-size: cover;
 }
 a{
     text-decoration: none;
     color:darkturquoise;
 }
+img{
+    width: 20%;
+}
+h1{
+    font-size: 2rem;
+}
+
 /* End of general styling */
 /* Navigation Tabs */
 .navigation-tabs{
@@ -40,10 +50,11 @@ a{
 .navigation-tabs li:hover, .navigation-tabs li:active{
     background-color:white;
     cursor: pointer;
-
 }
 
 /* End the navigation */
+
+/* About div */
 
 /* Welcome div design */
 .welcome{
@@ -67,11 +78,23 @@ a{
     border-width: 0px;
     cursor:pointer;
     transition: all .5s;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -ms-transition: all .5s;
+    -o-transition: all .5s;
+    -webkit-border-radius: 120px;
+    -moz-border-radius: 120px;
+    -ms-border-radius: 120px;
+    -o-border-radius: 120px;
 }
 #open-rest:hover{
     transform: translateY(-10px);
-    color:rgb(115, 160, 180);   
+    color:rgb(115, 160, 180);
     background-color: white;
+    -webkit-transform: translateY(-10px);
+    -moz-transform: translateY(-10px);
+    -ms-transform: translateY(-10px);
+    -o-transform: translateY(-10px);
 }
 
 /* Edit the open-rest button when it is clicked */
@@ -103,7 +126,64 @@ a{
 }
 
 /* Edit the remaining part of the site */
+/* The About section */
+#about{
+    margin-top: 10%;
+    display:none;
 
+}
+#about{
+    text-align: center;
+}
+#about img {
+    border-radius:100%;
+}
+/* Projects */
+#projects{
+    display:none;
+}
+/* Contacts */
+#contacts{
+    display:none;
+    margin-top: 5%;
+    background-color: rgb(64, 55, 73);
+    padding: 20px 20px;
+    height: 150px;
+}
+#contacts img{
+    border-radius:10%;
+    width:150px;
+    display: inline;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    float: left;
+    margin-right: 20px;
+}
+#contacts input{
+    display:flex;
+    margin-top: 30px;
+}
+#contacts #message{
+    height: 50px;
+    width: 20%;
+    padding-top: 0 0 0;
+    text-align:start;
+    margin-top: 5px;
+}
+#contacts footer{
+    margin-top: 10px;
+}
+#contacts #github{
+    width:20px;
+    margin-right: 12px;
+}
+#send-button{
+    margin-top: 5px;
+}
+#send-button:hover{
+    cursor: pointer;
+}
 /* Keyframes begins */
 @keyframes slideFromLeft{
     from{
