@@ -146,19 +146,28 @@ h1{
     display:none;
     margin-top: 5%;
     background-color: rgb(64, 55, 73);
-    padding: 20px 20px;
-    height: 150px;
+    padding: 2px 20px;
+    height: 220px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
 }
 #contacts img{
     border-radius:10%;
-    width:150px;
+    width:12%;
     display: inline;
     text-align: center;
     margin-left: auto;
     margin-right: auto;
-    float: left;
-    margin-right: 20px;
+    cursor: pointer;
 }
+
+.contact-image{
+    align-items:center;
+    margin-left: 200px;
+}
+/* }
 #contacts input{
     display:flex;
     margin-top: 30px;
@@ -182,7 +191,7 @@ h1{
 }
 #send-button:hover{
     cursor: pointer;
-}
+} */
 /* Keyframes begins */
 @keyframes slideFromLeft{
     from{
