@@ -13,7 +13,7 @@ const restOfThePage = document.querySelector(".others");
 const about = document.querySelector("#about");
 const projects = document.querySelector("#projects");
 const contacts = document.querySelector("#contacts");
-
+const body = document.querySelector("body");
 const sendButton = document.querySelector("#send-button");
 function openbody (){
     restOfThePage.classList.add("others-clicked");
@@ -23,6 +23,7 @@ function openbody (){
    about.style.display = "block";
    projects.style.display = "block";
    contacts.style.display = "block";
+   body.style.backgroundImage = "url('../assets/images/background-default.png')"
 };
 
 function sendMail(){
